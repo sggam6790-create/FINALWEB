@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(145deg, #1e2b3a 0%, #0f1a24 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            padding: 20px;
+        }
+
+        .card {
+            max-width: 400px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 40px;
+            padding: 50px 30px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            background: linear-gradient(105deg, #F9B81B, #FD9E16);
+            border: none;
+            border-radius: 60px;
+            padding: 18px 12px;
+            font-size: 1.6rem;
+            font-weight: 700;
+            font-family: inherit;
+            color: #1E2A32;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+            box-shadow: 0 10px 20px -5px rgba(0,0,0,0.4);
+        }
+
+        .btn:active {
+            transform: scale(0.97);
+            box-shadow: 0 5px 12px -3px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <button class="btn" id="redirectBtn">Click Here</button>
+    </div>
+
+    <script>
+        document.getElementById("redirectBtn").addEventListener("click", function() {
+            window.open("https://earnlinks.in/etRVj", "_blank");
+        });
+    </script>
+</body>
+</html>
